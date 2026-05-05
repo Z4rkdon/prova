@@ -19,8 +19,23 @@ else:
 # Para calcular, siga a fórmula: qtd_litros =  * peso.
 def calcular_agua(peso):
     qtd_litros = 0,035 * peso
-    print()
+    print(f"você deve beber {qtd_litros:.2f} litros se água por dia.")
+
+calcular_agua(70)
 
 # 5) (1,0 p) Crie um código que verifica se "estudar" existe na lista criada da questão 2. Use o laço de repetição que preferir.
+encontrou = False
+for atividade in atividades:
+    if atividade.lower() == "estudar":
+        encontrou = True
+
+if encontrou:
+    print("A atividade 'estudar' está na lista.")
+else:
+    print("A atividade 'estudar' não foi encontrada.")
 
 # 6) (1,0 p) Crie um laço de repetição que conta de 1 a 128, mas ao invés de somar 1 no contador, multiplique-o por 2.
+contador = 1
+while contador <= 128:
+    print(contador)
+    contador *= 2
