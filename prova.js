@@ -1,88 +1,38 @@
-/* x 1) (0,5 p) Crie variáveis para armazenar seu nome, altura, série e turma. Após isso, mostre no terminal uma mensagem personalizada se apresentando. */
+// 1) Variáveis e Apresentação
+let nome = "Guilherme Luiz";
+let minhaAltura = 1.80; // Usei a variável que você criou
+let serie = "3º ano";
+let turma = "DSC";
 
-/* x 2) (0,5 p) Crie uma lista com 3 esportes que você gosta */
+console.log(`Olá, meu nome é ${nome}, minha altura é ${minhaAltura}, sou da série ${serie} e turma ${turma}.`);
 
-/* x 3) (1,0 p) Crie uma condição que verifica se você é maior que o professor Patrick, que possui 1.73 de altura */
+// 2) Lista com 3 esportes (Simplificado para facilitar a busca depois)
+const esportes = ["Beisebol", "Hockey", "Basquete"];
 
-/* x 4) (1,0 p) Crie uma função que mostre os 3 esportes no terminal. Use o laço de repetição que preferir. */
-
-/* 5) (1,0 p) Crie um código que verifica se o esporte "natação" existe na lista criada da questão 2. */
-
-/* + ou -6) (1,0 p) Crie um laço de repetição que conta de 0 até -10 */
-
-
-nome = "Guilherme L"
-idade = 16
-minhaAltura = 1.80
-genero = "masculino"
-cor_de_pele = "branco"
-cor_de_cabelo = "ruivo"
-tamanho_cabelo = "medio"
-estilo_cabelo = "arrumado"
-curso = 'Desenvolvimento de Sistemas'
-hobby = ' escutar musica, desenhar '
-console.log('olá meu nome é' ,nome, 'tenho' ,idade, 'anos minha altura é', minhaAltura, 'meu genêro é' , genero, 'minha cor de pele é', cor_de_pele, 'meu cabelo é',
- cor_de_cabelo, 'e', estilo_cabelo, 'meus hobbys são', hobby, 'e faço curso de', curso)
-
-const esportes = [
-
-    {
-        esportes:'tênis de mesa'
-    },
-
-    {
-        esportes:'hockey'
-    },
-
-    {
-        esportes:'basquete'
-    },
-
-]
-
-  function mostraresportes( esportes ) {
-    console.log(esportes)
-  }
-
+// 3) Condição de altura
 const alturaProf = 1.73;
-const alturaAluno = 1.90;
-const altura1 = 1.73;
-const altura2 = 1.90;
-let tamanho1;
-let tamanho2;
-let alturamedia;
-
-
- if(altura1 > alturaProf) {
-    tamanho1 > altura1
- }
-
-
-    else {
-    tamanho1 > alturaProf
- }
-
- if (altura2 > alturaAluno) {
-    console.log('aluno é maior')
-    tamanho2 > altura2
+if (minhaAltura > alturaProf) {
+    console.log("Você é maior que o professor Patrick.");
+} else {
+    console.log("Você é menor ou tem a mesma altura que o professor Patrick.");
 }
 
-    else{
-    console.log('você é maior')
-    altura2 > alturaAluno}
-    alturamedia = (tamanho1 >= tamanho2)
-    console.log('a altura do aluno é' + alturamedia)
-    if (alturamedia > 1.73) {
-        console.log( 'maior')
+// 4) Função que mostra os esportes com laço de repetição
+function mostrarEsportes(lista) {
+    for (let i = 0; i < lista.length; i++) {
+        console.log(`Esporte: ${lista[i]}`);
     }
-   
-    else {
-        console.log('menor')
-    }
+}
+mostrarEsportes(esportes);
 
-    console.log("vocẽ é:" + alturamedia)
+// 5) Verifica se "natação" existe na lista
+if (esportes.includes("natação")) {
+    console.log("O esporte natação existe na lista.");
+} else {
+    console.log("O esporte natação não está na lista.");
+}
 
-mostraresportes(esportes)
-
- while(contador = 1,
- console.log(contador + contador));
+// 6) Laço de repetição que conta de 0 até -10
+for (let contador = 0; contador >= -10; contador--) {
+    console.log(contador);
+}
