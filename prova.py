@@ -8,7 +8,7 @@ print("Meu nome é", nome, ", minha nota foi", nota_prova, ", minha série é", 
 
 # 2) (0,5 p) Crie uma lista com 3 atividades que você gosta de fazer no final de semana.
 Atividades = ["Desenhar", "Jogar", "Assistir series e filmes"]
-
+atividade = ['ir ao cinema']
 # 3) (1,0 p) Crie uma condição que verifica se sua nota da prova é maior que a média 1,8.
 if nota_prova > 1.8:
     print("Párabens, vc passou!")
@@ -18,14 +18,14 @@ else:
 # 4) (1,0 p) Crie uma função mostra no terminal a quantidade de litros de água que devem ser consumidos diariamente por uma pessoa. Depois execute a função colocando um peso como parâmetro.
 # Para calcular, siga a fórmula: qtd_litros =  * peso.
 def calcular_agua(peso):
-    qtd_litros = 0,035 * peso
-    print(f"você deve beber {qtd_litros:.2f} litros se água por dia.")
+    qtd_litros = 0.035 * peso
+    print(f"você deve beber {qtd_litros} litros de água por dia.")
 
 calcular_agua(70)
 
 # 5) (1,0 p) Crie um código que verifica se "estudar" existe na lista criada da questão 2. Use o laço de repetição que preferir.
 encontrou = False
-for atividade in atividades:
+for atividade in Atividades:
     if atividade.lower() == "estudar":
         encontrou = True
 
