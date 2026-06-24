@@ -39,7 +39,7 @@ class Carro:
 
     def exibir(self):
         status = "Disponível" if self.__disponivel else "Alugado"
-        print("\n--- Informações do Veículo ---")
+        print("***Informações do Veículo***")
         print(f"Marca: {self.__marca}")
         print(f"Modelo: {self.__modelo}")
         print(f"Placa: {self.__placa}")
