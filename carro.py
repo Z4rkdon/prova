@@ -41,24 +41,4 @@ class Carro:
         status = "Disponível" if self.__disponivel else "Alugado"
         print("***Informações do Veículo***")
         print(f"Marca: {self.__marca}")
-        print(f"Modelo: {self.__modelo}")
-        print(f"Placa: {self.__placa}")
-        print(f"Valor da Diária: R$ {self.__valor_diaria:.2f}")
-        print(f"Quilometragem: {self.__quilometragem} km")
-        print(f"Status: {status}")
-        print("-" * 30)
-
-    def alugar(self):
-        if self.__disponivel:
-            self.__disponivel = False
-            print("Aluguel efetuado com sucesso!")
-        else:
-            print("Não foi possível alugar!")
-
-    def devolver(self, nova_quilometragem: int):
-        if not self.__disponivel and nova_quilometragem > self.__quilometragem:
-            self.__quilometragem = nova_quilometragem
-            self.__disponivel = True
-            print("Devolução efetuada com sucesso!")
-        else:
-            print("Erro ao efetuar devolução")
+        print
